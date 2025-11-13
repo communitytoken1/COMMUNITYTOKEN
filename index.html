@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$COMMUNITYTOKEN – The Community Coin</title>
+  <meta name="description" content="Official website for $COMMUNITYTOKEN – a community-driven token built for the people."/>
+
+  <!-- Tailwind CDN (v3) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366f1',   // indigo-500 – change to your brand color
+            accent:  '#10b981',   // emerald-500
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <a href="#" class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">$</div>
+        <span class="font-bold text-xl">COMMUNITYTOKEN</span>
+      </a>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-primary transition">Home</a>
+        <a href="#tokenomics" class="hover:text-primary transition">Tokenomics</a>
+        <a href="#roadmap" class="hover:text-primary transition">Roadmap</a>
+        <a href="#team" class="hover:text-primary transition">Team</a>
+        <a href="#contact" class="hover:text-primary transition">Contact</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="#home" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+      <a href="#tokenomics" class="block px-4 py-2 hover:bg-gray-100">Tokenomics</a>
+      <a href="#roadmap" class="block px-4 py-2 hover:bg-gray-100">Roadmap</a>
+      <a href="#team" class="block px-4 py-2 hover:bg-gray-100">Team</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="pt-20 pb-32 bg-gradient-to-br from-primary/10 via-white to-accent/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mb-6">
+        $COMMUNITYTOKEN
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+        A community-driven token built on transparency, fairness, and collective growth.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://dexscreener.com" target="_blank" class="px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition">
+          Buy $CTK
+        </a>
+        <a href="#tokenomics" class="px-8 py-3 bg-white border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary/5 transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOKENOMICS ===== -->
+  <section id="tokenomics" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center mb-12">Tokenomics</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <h3 class="text-2xl font-semibold mb-4">Supply & Distribution</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><strong>Total Supply:</strong> 1,000,000,000 $CTK</li>
+            <li><strong>Liquidity Pool:</strong> 50%</li>
+            <li><strong>Marketing & Partnerships:</strong> 20%</li>
+            <li><strong>Team (locked 12 mo):</strong> 10%</li>
+            <li><strong>Community Rewards:</strong> 20%</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <h3 class="text-2xl font-semibold mb-4">Tax Structure</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><strong>Buy Tax:</strong> 2% (1% → LP, 1% → Marketing)</li>
+            <li><strong>Sell Tax:</strong> 2% (
